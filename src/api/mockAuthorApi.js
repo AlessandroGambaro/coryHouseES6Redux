@@ -28,6 +28,7 @@ const generateId = (author) => {
 
 class AuthorApi {
   static getAllAuthors() {
+    debugger;
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(Object.assign([], authors));
@@ -36,7 +37,8 @@ class AuthorApi {
   }
 
   static saveAuthor(author) {
-	author = Object.assign({}, author); // to avoid manipulating object passed in.
+  	author = Object.assign({}, author); // to avoid manipulating object passed in.
+    debugger;
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         // Simulate server-side validation
